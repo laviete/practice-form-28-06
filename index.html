@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form class="form">
+      <h1>Форма зворотнього зв'язку</h1>
+
+      <fieldset> 
+        <legend>Особисті дані</legend>
+      <label>
+        Ім'я:
+        <input type="text" name="username" autofocus/>
+      </label>
+      <label>
+        Електронна пошта:
+        <input type="email"name="email"/>
+      </label>
+      <label>
+        Дата народження:
+        <input type="date" name="date"/>
+      </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Стать</legend>
+        <label>
+          <input type="radio" value="male" name="gender"/>Чоловік
+        </label>
+        <label>
+          <input type="radio" value="female" name="gender"/>Жінка
+        </label>
+        <label>
+          <input type="radio" value="nonbinary" name="gender"/>Інше
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Додаткові налаштування</legend>
+        <label>
+          <input type="checkbox"name="isSubscribe"/>Підписатися на розсилку
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Оберіть категорію своїх інтересів</legend>
+        <select name="interests">
+        <optgroup label="Технології">
+          <option value="Programming">Програмування</option>
+          <option value="Networks">Мережі</option>
+        </optgroup>
+        <optgroup label="Музика">
+          <option value="Rock">Рок</option>
+          <option value="Pop">Поп</option>
+        </optgroup>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Як Ви дізналися про нас?</legend>
+        <label>
+          <input type="radio" value="search-systems" name="found-out"/>Пошукові системи
+        </label>
+        <label>
+          <input type="radio" value="social-networks" name="found-out"/>Соціальні мережі
+        </label>
+        <label>
+          <input type="radio" value="advice-from-friends" name="found-out"/>Порада друзів/знайомих
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Опишіть свої враження/скарги/пропозиції</legend>
+        <label>
+          <textarea name="text" cols="50" rows="5"></textarea>
+        </label>
+      </fieldset>
+
+      <button type="submit">Надіслати форму</button>
+    </form>
+  </body>
+</html>
