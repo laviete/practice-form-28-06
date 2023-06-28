@@ -1,0 +1,53 @@
+body{ 
+    display: flex;
+    flex-direction: column;
+    
+    margin: 20px;
+    padding: 0;
+    font-family: 'Shantell Sans', cursive;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 600px;
+}
+
+h1{
+    text-align: center;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+.form input,
+select{
+    margin:5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(169, 210, 193);
+    font-family: 'Shantell Sans', cursive;
+}
+
+button:hover{
+    background-color: rgb(106, 223, 139);
+}
